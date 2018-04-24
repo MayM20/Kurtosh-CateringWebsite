@@ -1,0 +1,16 @@
+.product-column{
+  min-height:200px;
+}
+.product-name{
+  min-height:80px;
+  text-transform: capitalize;
+}
+.product-thumbnail{
+  border:1px solid #cccccc;
+}
+.product-description{
+  min-height: 100px;
+}
+.price::before{
+  content:'$';
+}
