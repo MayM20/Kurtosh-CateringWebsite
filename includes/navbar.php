@@ -12,9 +12,12 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
+<<<<<<< HEAD
       <li class="nav-item">
         <a class="nav-link" href="register.php">Register</a>
       </li>
+=======
+>>>>>>> eea4777be5cc8ba1cddb6a3dc156eeeee691d77c
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
