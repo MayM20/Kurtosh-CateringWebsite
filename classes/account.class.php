@@ -51,22 +51,75 @@ class Account extends Database{
   }
   
   public function checkUserName($username){
-    // check if username is already in the db
-    //true if it does exist, false if it doesn't
+    //check if username is already in database
+    //return true if exists and false otherwise
     $query = "SELECT username FROM accounts WHERE username = ?";
     $statement = $this -> connection -> prepare($query);
-    $statement -> bind_param("s", $username);
+    $statement -> bind_param( 's', $username );
     $statement -> execute();
     $result = $statement -> get_result();
-    
-    if ($result -> num_rows > 0){
+    if( $result -> num_rows > 0 ){
       //username exists
       return true;
     }
-    else {
+    else{
       //username does not exist
+      return false;
+    }
+    $statement -> close();
+  }
+  public function checkEmail($email){
+    //check if username is already in database
+    //return true if exists and false otherwise
+    $query = "SELECT email FROM accounts WHERE email = ?";
+    $statement = $this -> connection -> prepare($query);
+    $statement -> bind_param( 's', $email );
+    $statement -> execute();
+    $result = $statement -> get_result();
+    if( $result -> num_rows > 0 ){
+      //username exists
+      return true;
+    }
+    else{
+      //username does not exist
+      return false;
+    }
+    $statement -> close();
+  }
+
+  public function authenticate($credential, $password){
+    $query = "SELECT account_id,username,email,password 
+    FROM accounts WHERE username=? OR email=?";
+    $statement = $this -> connection -> prepare($query);
+    $statement -> bind_param('ss',$credential,$credential);
+    $statement -> execute();
+    $result = $statement -> get_result();
+    if( $result -> num_rows > 0 ){
+      $row = $result -> fetch_assoc();
+      $stored_hash = $row["password"];
+      if( password_verify($password,$stored_hash) ){
+        //password matches
+        //create session variables to indicate that user
+        //has successfully logged in
+        session_start(); //start the session
+        $_SESSION["username"] = $row["username"];
+        $_SESSION["account_id"] = $row["account_id"];
+        $_SESSION["email"] = $row["email"];
+        return true;
+      }
+      else{
+        //password does not match registration
+        $this -> errors["password"] = "wrong credentials supplied";
+        return false;
+      }
+    }
+    else{
+      //there is no account with supplied credentials
+      $this -> errors["account"] = "there is no account matching the credentials supplied";
       return false;
     }
   }
 }
+
+
 ?>
