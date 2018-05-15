@@ -5,9 +5,9 @@ class Database {
     private $password;
     private $host;
     private $db;
-    public $connection;
+    protected $connection;
     
-    public function __construct() {
+    protected function __construct() {
         $this -> username = getenv('dbuser');
         $this -> password = getenv('dbpassword');
         $this -> host = getenv('dbhost');
