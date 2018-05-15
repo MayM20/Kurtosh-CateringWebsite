@@ -1,24 +1,156 @@
-.product-column {
+.logo{
+  max-width: 100px;
+}
+.product-column{
   min-height:200px;
 }
-
-.product-name {
+.product-name{
   min-height:80px;
   text-transform: capitalize;
 }
-
-.product-thumbnail {
+.product-thumbnail{
   border:1px solid #cccccc;
 }
-
-.product-description {
+.product-description{
   min-height: 100px;
 }
-
-.price::before {
+.price::before{
   content:'$';
 }
 
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.home img{
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
 .navbar{
-  background-color: #eeeeee !important;
+  font-size: 14px;
+}
+.btn-outline-success{
+    color: white;
+    background-color: black;
+    background-image: none;
+    border-color: purple;
+}
+.btn-outline-success:hover{
+    color: #fff;
+    background-color: purple;
+    border-color: purple;
+}
+
+/*this works for the about-us-section*/
+.about-us-section{
+  margin: 150px 0 170px 0;
+}
+.text h2{
+  line-height: 60px;
+  margin-bottom: 45px;
+}
+.short-banner{
+    background: url('../images/graphics/brownie_banner.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed
+}
+.short-banner .opacity{
+    background: rgba(0,0,0,0.5);
+    padding: 165px;
+    text-align: center;
+}
+.short-banner .opacity h2{
+    color: white;
+    line-height: 75px;
+    font-size: 55px;
+}
+/*popular items section*/
+.delicious-food-section.fix-top-margin {
+    padding-top: 135px;
+}
+.theme-section-title h2 {
+    line-height: 55px;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+.theme-section-title p {
+    line-height: 32px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.delicious-food-section .row {
+    margin-bottom: 115px;
+}
+.delicious-food-section .single-item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.delicious-food-section .single-item img {
+    margin: 0 auto;
+}
+.delicious-food-section .devider {
+    height: 1px;
+    width: 95%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.08);
+}
+.theme-main-footer {
+  background: #181818;
+  padding-top: 100px;
+}
+.theme-main-footer p,.theme-main-footer a {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(255,255,255,0.6);
+}
+.top-footer-widget .footer-logo p {
+  margin: 12px 0 18px 0;
+}
+.top-footer-widget h5 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px 0 38px 0;
+}
+.top-footer-widget .footer-list-widget ul li a {
+  margin-bottom: 15px;
+}
+.top-footer-widget .insta-feed ul {
+  margin: 0 -7.5px;
+}
+.top-footer-widget .insta-feed ul li {float: left;width: 33.333333333%;padding: 0 7.5px;margin-bottom: 15px;}
+.top-footer-widget .insta-feed ul li a {display: block;}
+.top-footer-widget .subscribe-widget>div {padding-left: 40px;}
+.top-footer-widget .subscribe-widget p {margin: -5px 0 20px 0;}
+.top-footer-widget .subscribe-widget form {height: 60px;margin-bottom: 20px;}
+.top-footer-widget .subscribe-widget form input {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border:none;
+  padding: 0 20px;
+  color: rgba(0,0,0,0.4);
+}
+.top-footer-widget .subscribe-widget ul li {display: inline-block;}
+.top-footer-widget .subscribe-widget ul li a {font-size: 20px;margin-right: 15px;color: #6b6b6b;}
+.top-footer-widget [class*="col-"] {margin-bottom: 50px;}
+.theme-main-footer .bottom-footer {
+  border-top:1px solid rgba(36,36,36,0.7);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+.theme-main-footer .bottom-footer p {
+  color: #8b8b8b;
+}
+.box-layout .theme-main-footer .bottom-footer {
+  background:#fff; 
+  border: none;
+  padding: 35px 0;
 }
