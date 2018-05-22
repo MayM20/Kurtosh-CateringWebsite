@@ -24,11 +24,10 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-.home img{
+.home{
   display: table;
-  height: 100%;
   position: relative;
-  width: 100%;
+  max-width:100%;
   background-size: cover;
 }
 .navbar{
@@ -127,7 +126,7 @@ section .section-title {
 .top-footer-widget .insta-feed ul li {
     float: left;
     width: 33.333333333%;
-    /*padding: 0 7.5px;*/
+    padding: 0 7.5px;
     margin-bottom: 15px;
 }
 .top-footer-widget .insta-feed ul li a {

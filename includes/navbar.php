@@ -4,7 +4,7 @@
     <div class="columns sixteen">
       <ul>
             <li>
-              <a href="/account/login" id="customer_login_link">Log in</a>
+              <a href="login.php" id="customer_login_link">Log in</a>
             </li>
         <li>
           <a href="/cart" class="cart_button"><span class="icon-cart"></span> Cart (<span class="cart_count">0</span>)</a>
