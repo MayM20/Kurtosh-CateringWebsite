@@ -1,21 +1,74 @@
 .logo{
   max-width: 100px;
 }
+.delicious-food-section .single-item h5 a{
+      color: #daac5b;
+}
+/*cakes products styles*/
 .product-column{
   min-height:200px;
 }
 .product-name{
   min-height:80px;
   text-transform: capitalize;
+  border: 1px solid #B28564;/*new*/
+  text-align: center;
+  color: black;
+  margin: 0;
 }
 .product-thumbnail{
   border:1px solid #cccccc;
 }
 .product-description{
-  min-height: 100px;
+  /*min-height: 100px;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  width: 50%;
+  border-top: none !important;
+  border-left: none !important;
+  text-align: center;
+  padding: 15px;
+  color: #B28564;
+  border: 1px solid #B28564;
+  font-weight: 600;
+}
+.product-price{
+  /*font-weight: 600;
+  margin:1em 0;
+  border: 1px solid #B28564;*/
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #B28564;
+    border-top: none !important;
+    padding: 1rem .2rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1;
+    color: black;
+}
+.page-link{
+  color: #B28564;
+}
+.page-item.active .page-link{
+  background:#B28564;
+  border-color: #B28564;
+  color:white;
+  
 }
 .price::before{
   content:'$';
+}
+.nav-link{
+  color: #4f413f;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #4f413f;
 }
 
 section .section-title {
