@@ -282,20 +282,21 @@ section .section-title {
   padding: 35px 0;
 }
 
-.login-title {
+.customer-title {
   text-align: center;
   color: #4f413f;
   border-bottom: 1px solid #4f413f;
   padding-bottom: 1em;
 }
 
-.login-btn {
+.customer-btn {
   background-color: #4f413f;
   color: white;
   border: 1px solid #796360;
+  width: 100%;
 }
 
-.login-btn:hover {
+.customer-btn:hover {
   background-color: #796360;
   color: white;
   border: 1px solid #796360;
@@ -303,4 +304,8 @@ section .section-title {
 
 .login-box {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.margin-register {
+  margin-bottom: 1em;
 }

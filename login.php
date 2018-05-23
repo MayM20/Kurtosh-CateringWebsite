@@ -41,7 +41,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
           }
          
           ?>
-          <h4 class="login-title">LOGIN</h4>
+          <h4 class="customer-title">LOGIN</h4>
           <form id="login-form" method="post" action="login.php" novalidate>
             <div class="form-group">
               <label for="credentials">Email or Username</label>
@@ -54,7 +54,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
               <div class="invalid-feedback">Please type a valid password</div>
             </div>
             <div class="text-center">
-              <button type="submit" name="login" class="btn btn-outline-primary btn-block login-btn">SIGN IN</button>
+              <button type="submit" name="login" class="btn btn-outline-primary btn-block customer-btn">SIGN IN</button>
             </div>
             <p class="my-4">New customer? Click <a href="register.php">here</a> to register an account!</p>
           </form>

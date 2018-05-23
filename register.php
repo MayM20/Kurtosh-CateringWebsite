@@ -59,9 +59,9 @@ $page_title = "Register for an account";
       
       ?>
  
-      <div class="row justify-content-center">
+      <div class="row justify-content-center login-box">
         <div class="col-5">
-          <h2>Register for an account</h2>
+          <h4 class="customer-title">REGISTER</h4>
           <form id="register-form" method="post" action="register.php">
             <div class="form-group">
               <label for="username">User Name</label>
@@ -76,8 +76,8 @@ $page_title = "Register for an account";
               <input id="password" name="password" class="form-control" placeholder="password" type="password">
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-outline-primary" name="register-btn">
-                Register
+              <button type="submit" class="btn btn-outline-primary customer-btn margin-register" name="register-btn">
+                REGISTER
               </button>
             </div>
           </form>
@@ -137,6 +137,7 @@ $page_title = "Register for an account";
       );
     </script>
   </body>
+  <?php include ('includes/footer.php'); ?>
 </html>
 <template id="register-error">
   <div class="alert alert-warning alert-dismissible fade show" role="alert">

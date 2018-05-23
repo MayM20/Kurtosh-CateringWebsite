@@ -39,8 +39,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">build your own cake</a>
           <a class="dropdown-item" href="cakes.php">products</a>
-          <a class="dropdown-item" href="#">pastries</a>
-          <a class="dropdown-item" href="#">drinks</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
