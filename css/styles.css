@@ -1,76 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+/*TOP BAR NAV*/
+.container .sixteen {
+    width: 100%;
+}
+.top_bar {
+    background-color: #4f413f;
+    text-align: center;
+}
+.top_bar .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.top_bar ul {
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 0;
+    text-align: right;
+}
+.top_bar ul li {
+    border-bottom: 0;
+    border-top: 0;
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+.top_bar a {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+/*INDEX STYLES*/
 .logo{
   max-width: 100px;
 }
 .delicious-food-section .single-item h5 a{
       color: #daac5b;
 }
-/*cakes products styles*/
-.product-column{
-  min-height:200px;
-}
-.product-name{
-  min-height:80px;
-  text-transform: capitalize;
-  border: 1px solid #B28564;/*new*/
-  text-align: center;
-  color: black;
-  margin: 0;
-}
-.product-thumbnail{
-  border:1px solid #cccccc;
-}
-.product-description{
-  /*min-height: 100px;*/
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  font-size: 14px;
-  width: 50%;
-  border-top: none !important;
-  border-left: none !important;
-  text-align: center;
-  padding: 15px;
-  color: #B28564;
-  border: 1px solid #B28564;
-  font-weight: 600;
-}
-.product-price{
-  /*font-weight: 600;
-  margin:1em 0;
-  border: 1px solid #B28564;*/
-    display: inline-block;
-    float: left;
-    width: 50%;
-    text-align: center;
-    border: 1px solid #B28564;
-    border-top: none !important;
-    padding: 1rem .2rem;
-    font-size: 1.2em;
-    font-weight: 600;
-    line-height: 1;
-    color: black;
-}
-.page-link{
-  color: #B28564;
-}
-.page-item.active .page-link{
-  background:#B28564;
-  border-color: #B28564;
-  color:white;
-  
-}
-.price::before{
-  content:'$';
-}
-.nav-link{
-  color: #4f413f;
-}
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #4f413f;
-}
-
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -121,6 +93,9 @@ section .section-title {
     line-height: 75px;
     font-size: 55px;
 }
+.section2{
+  max-width: 100%;
+}
 /*popular items section*/
 .delicious-food-section.fix-top-margin {
     padding-top: 135px;
@@ -145,12 +120,93 @@ section .section-title {
 }
 .delicious-food-section .single-item img {
     margin: 0 auto;
+    max-width: 100%;
 }
 .delicious-food-section .devider {
     height: 1px;
     width: 95%;
     margin: 0 auto;
     background: rgba(0,0,0,0.08);
+}
+
+/*CAKES PRODUCTS STYLES*/
+.product-column{
+  min-height:200px;
+}
+.product-name{
+  min-height:80px;
+  text-transform: capitalize;
+  border: 1px solid #B28564;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+.product-thumbnail{
+  border:1px solid #cccccc;
+  
+}
+.product-description{
+  /*min-height: 100px;*/
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  width: 50%;
+  border-top: none !important;
+  border-left: none !important;
+  text-align: center;
+  padding: 15px;
+  color: #B28564;
+  border: 1px solid #B28564;
+  font-weight: 600;
+}
+.product-price{
+  /*old styles
+  font-weight: 600;
+  margin:1em 0;
+  border: 1px solid #B28564;*/
+  display: inline-block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #B28564;
+  border-top: none !important;
+  padding: 1rem .2rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1;
+  color: black;
+}
+.price::before{
+  content:'$';
+}
+/*color text*/
+.page-link{
+  color: #B28564;
+}
+/*background and color side bar*/
+.page-item.active .page-link{
+  background:#B28564;
+  border-color: #B28564;
+  color:white;
+  
+}
+.nav-link{
+  color: #4f413f;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #4f413f;
+}
+/*FOOTER*/
+.clearfix img{
+  max-width:100%;
+}
+.top-footer-widget ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .theme-main-footer {
   background: #181818;
@@ -179,7 +235,7 @@ section .section-title {
 .top-footer-widget .insta-feed ul li {
     float: left;
     width: 33.333333333%;
-    padding: 0 7.5px;
+    padding: 10px;
     margin-bottom: 15px;
 }
 .top-footer-widget .insta-feed ul li a {
@@ -226,39 +282,25 @@ section .section-title {
   padding: 35px 0;
 }
 
-/*TOP BAR NAV*/
-.container .sixteen.columns {
-    width: 1180px;
+.login-title {
+  text-align: center;
+  color: #4f413f;
+  border-bottom: 1px solid #4f413f;
+  padding-bottom: 1em;
 }
-.top_bar {
-    background-color: #4f413f;
-    text-align: center;
+
+.login-btn {
+  background-color: #4f413f;
+  color: white;
+  border: 1px solid #796360;
 }
-.top_bar .container {
-    padding-top: 0;
-    padding-bottom: 0;
+
+.login-btn:hover {
+  background-color: #796360;
+  color: white;
+  border: 1px solid #796360;
 }
-.top_bar ul {
-    padding: 0;
-    margin: 5px 0 0 0;
-    border: 0;
-    text-align: right;
-}
-.top_bar ul li {
-    border-bottom: 0;
-    border-top: 0;
-    padding: 0 10px;
-    position: relative;
-    display: inline-block;
-}
-.top_bar a {
-    font-family: Source Sans Pro;
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 0px;
-    display: block;
-    height: 30px;
-    line-height: 30px;
+
+.login-box {
+  font-family: 'Source Sans Pro', sans-serif;
 }

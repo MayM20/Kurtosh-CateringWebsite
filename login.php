@@ -27,7 +27,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
     <?php include('includes/navbar.php'); ?>
     <div class="container content">
       <div class="row">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-4 offset-md-4 login-box">
           <?php
           if( count($account -> errors) > 0 ){
             $error_string = implode(' ', $account -> errors );
@@ -41,28 +41,29 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
           }
          
           ?>
-          <h4>Login to your account</h4>
+          <h4 class="login-title">LOGIN</h4>
           <form id="login-form" method="post" action="login.php" novalidate>
             <div class="form-group">
-              <label for="credentials">Email address or User name</label>
-              <input id="credentials" class="form-control" type="text" name="credentials" placeholder="jenny@example.com or jenny66" required>
+              <label for="credentials">Email or Username</label>
+              <input id="credentials" class="form-control" type="text" name="credentials" placeholder="email or username" required>
               <div class="invalid-feedback">Please type a valid username or email</div>
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input id="password" class="form-control" type="password" name="password" placeholder="your password" required>
+              <input id="password" class="form-control" type="password" name="password" placeholder="password" required>
               <div class="invalid-feedback">Please type a valid password</div>
             </div>
             <div class="text-center">
-              <button type="submit" name="login" class="btn btn-outline-primary btn-block">Log in</button>
+              <button type="submit" name="login" class="btn btn-outline-primary btn-block login-btn">SIGN IN</button>
             </div>
-            <p class="my-4">Don't have an account? <a href="register.php">Register</a> for a free account</p>
+            <p class="my-4">New customer? Click <a href="register.php">here</a> to register an account!</p>
           </form>
         </div>
       </div>
     </div>
     <!--<script src="/js/login.js"></script>-->
   </body>
+  <?php include ('includes/footer.php'); ?>
 </html>
 
 <template id="alert-template">

@@ -6,6 +6,9 @@
             <li>
               <a href="login.php" id="customer_login_link">Log in</a>
             </li>
+            <li>
+              <a href="register.php" class="cart_button"><span class="icon-cart"></span>or Register</a>
+            </li>
         <li>
           <a href="/cart" class="cart_button"><span class="icon-cart"></span> Cart (<span class="cart_count">0</span>)</a>
         </li>
@@ -31,11 +34,11 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ORDER ONLINE
+          SHOP
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">build your own cake</a>
-          <a class="dropdown-item" href="cakes.php">cakes</a>
+          <a class="dropdown-item" href="cakes.php">products</a>
           <a class="dropdown-item" href="#">pastries</a>
           <a class="dropdown-item" href="#">drinks</a>
           <div class="dropdown-divider"></div>

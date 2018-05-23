@@ -22,12 +22,12 @@
 							<div class="col-md-3 col-sm-4 col-xs-12 insta-feed">
 								<h5>Quick Links</h5>
 								<ul class="clearfix">
-									<li><a href="#"><img class="logo" src="images/graphics/4.jpg" alt=""></a></li>
-									<li><a href="#"><img class="logo" src="images/graphics/5.jpg" alt=""></a></li>
-									<li><a href="#"><img class="logo" src="images/graphics/6.jpg" alt=""></a></li>
-									<li><a href="#"><img class="logo" src="images/graphics/7.jpg" alt=""></a></li>
-									<li><a href="#"><img class="logo" src="images/graphics/8.jpg" alt=""></a></li>
-									<li><a href="#"><img class="logo" src="images/graphics/9.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/4.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/5.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/6.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/7.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/8.jpg" alt=""></a></li>
+									<li><a href="#"><img src="images/graphics/9.jpg" alt=""></a></li>
 								</ul>
 							</div> <!-- /.insta-feed -->
 							<div class="col-md-4 col-xs-12 col-xs-12 subscribe-widget">
