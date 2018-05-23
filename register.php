@@ -64,12 +64,12 @@ $page_title = "Register for an account";
           <h4 class="customer-title">REGISTER</h4>
           <form id="register-form" method="post" action="register.php">
             <div class="form-group">
-              <label for="username">User Name</label>
+              <label for="username">Username</label>
               <input id="username" name="username" class="form-control" placeholder="username" type="text">
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input id="email" name="email" class="form-control" placeholder="you@domain.com" type="email">
+              <input id="email" name="email" class="form-control" placeholder="johndoe@email.com" type="email">
             </div>
             <div class="form-group">
               <label for="password">Password</label>

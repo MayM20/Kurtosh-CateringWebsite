@@ -3,7 +3,19 @@
   <div class="container">
     <div class="columns sixteen">
       <ul>
-            <li>
+          <?php
+            if(isset($_SESSION["username"]))
+            {
+              echo '<li><a href="login.php" id="customer_login_link">Log in</a></li>';
+              echo '<li><a href="register.php" class="cart_button"><span class="icon-cart"></span>or Register</a></li>';
+            }
+            else
+            {
+              echo '<li><a href="logout.php">Logout</a></li>';
+            }
+            
+            ?>
+            <!--<li>
               <a href="login.php" id="customer_login_link">Log in</a>
             </li>
             <li>
@@ -11,7 +23,7 @@
             </li>
         <li>
           <a href="/cart" class="cart_button"><span class="icon-cart"></span> Cart (<span class="cart_count">0</span>)</a>
-        </li>
+        </li> -->
       </ul>
     </div>
 </div>
