@@ -6,7 +6,7 @@ include('autoloader.php');
 //$connection = $database -> connection;
 
 $products_obj = new Products();
-?>
+?> 
 <!doctype html>
 <html>
   <?php include ('includes/head.php'); ?>

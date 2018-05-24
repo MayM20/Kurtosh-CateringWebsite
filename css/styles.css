@@ -335,3 +335,6 @@ section .section-title {
 .margin-register {
   margin-bottom: 1em;
 }
+.icon-shopping-cart:before{
+  content: '\e80f';
+}
