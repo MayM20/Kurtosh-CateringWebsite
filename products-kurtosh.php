@@ -44,6 +44,12 @@ $page_title = "Home page";
   <?php include ('includes/head.php'); ?>
   <body>
     <?php include('includes/navbar.php'); ?>
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Order Online</h1>      
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at arcu et mi sodales eleifend vel eu magna. Nulla ullamcorper odio eu pharetra aliquam. Nunc enim augue, mattis vitae pharetra sit amet, vulputate vel nunc. In lacinia elementum ex.</p>
+  </div>
+</div>
 <div class="container-fluid content">
   
       <div class="row">
@@ -131,7 +137,7 @@ $page_title = "Home page";
               $id = $product["id"];
               $name = $product["name"];
               $price = $product["price"];
-              $description = TruncateWords::extract($product["description"],10,true);
+              $description = TruncateWords::extract($product["description"], 10,true);
               $image = $product["image"];
               
               echo "<div class=\"col-sm-3 product-column\">";

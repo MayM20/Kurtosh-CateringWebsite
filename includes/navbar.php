@@ -4,16 +4,19 @@
     <div class="columns sixteen">
       <ul>
           <?php
-            if(isset($_SESSION["username"]))
+            //session_start();
+            if(isset($_SESSION["username"]) && !empty($_SESSION["username"]))
+            {
+              echo '<li><a href="logout.php">Logout</a></li>';
+              
+            }
+            else
             {
               echo '<li><a href="login.php" id="customer_login_link">Log in</a></li>';
               echo '<li><a href="register.php" class="cart_button"><span class="icon-cart"></span>or Register</a></li>';
             }
-            else
-            {
-              echo '<li><a href="logout.php">Logout</a></li>';
-            }
-            
+            //session_destroy();
+            echo $_SESSION["username"] . "name"; //testing purposes
             ?>
             <!--<li>
               <a href="login.php" id="customer_login_link">Log in</a>
@@ -42,7 +45,7 @@
         <a class="nav-link" href="index.php">HOME<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="about-us.php">ABOUT</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,9 +53,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">build your own cake</a>
-          <a class="dropdown-item" href="cakes.php">products</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="products-kurtosh.php">products</a>
         </div>
       </li>
       <li class="nav-item">

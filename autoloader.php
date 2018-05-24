@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 //This function will be called to resolve the name of the class
 //and try to find it directly

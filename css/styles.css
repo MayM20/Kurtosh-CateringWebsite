@@ -130,6 +130,14 @@ section .section-title {
 }
 
 /*CAKES PRODUCTS STYLES*/
+.jumbotron{
+  background: url(../images/graphics/hero_inner_08.jpg) no-repeat center;
+  color: white;
+  height: 400px;
+}
+.jumbotron p{
+  font-size: 20px;
+}
 .product-column{
   min-height:200px;
 }
@@ -198,6 +206,24 @@ section .section-title {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #4f413f;
+}
+/*PRODUCT DETAIL PAGE STYLES*/
+.cart-container{
+  margin-bottom: 80px;
+}
+.featured-products{
+  margin-bottom: 80px;
+}
+.quantity{
+    margin-right: .5em;
+    float: left;
+    height: 2.8em;
+}
+.add-to-cart-btn{
+    background: #B28564 ;
+    color: white;
+    border: 1px solid #B28564;
+    font-style: bold;
 }
 /*FOOTER*/
 .clearfix img{
