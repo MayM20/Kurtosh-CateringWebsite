@@ -4,10 +4,10 @@
     <div class="columns sixteen">
       <ul>
           <?php
-            //session_start();
             if(isset($_SESSION["username"]) && !empty($_SESSION["username"]))
             {
               echo '<li><a href="logout.php">Logout</a></li>';
+              echo "<div class=\"myaccount\">" . "Welcome " . $_SESSION["username"] . "</div>";
               
             }
             else
@@ -15,8 +15,6 @@
               echo '<li><a href="login.php" id="customer_login_link">Log in</a></li>';
               echo '<li><a href="register.php" class="cart_button"><span class="icon-cart"></span>or Register</a></li>';
             }
-            //session_destroy();
-            echo $_SESSION["username"] . "name"; //testing purposes
             ?>
         <li>
           <a href="" class="cart_button"><span class="icon-shopping-cart"></span> Cart (<span class="cart_count">0</span>)</a>
