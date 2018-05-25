@@ -59,30 +59,91 @@ $page_title = "Register for an account";
       
       ?>
  
-      <div class="row justify-content-center">
+      <div class="row justify-content-center login-box">
         <div class="col-5">
-          <h2>Register for an account</h2>
-          <form method="post" action="register.php">
+          <h4 class="customer-title">REGISTER</h4>
+          <form id="register-form" method="post" action="register.php">
             <div class="form-group">
-              <label for="username">User Name</label>
+              <label for="username">Username</label>
               <input id="username" name="username" class="form-control" placeholder="username" type="text">
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input id="email" name="email" class="form-control" placeholder="you@domain.com" type="email">
+              <input id="email" name="email" class="form-control" placeholder="johndoe@email.com" type="email">
             </div>
             <div class="form-group">
               <label for="password">Password</label>
               <input id="password" name="password" class="form-control" placeholder="password" type="password">
             </div>
             <div class="text-center">
-              <button class="btn btn-primary">
-                Sign up
+              <button type="submit" class="btn btn-outline-primary customer-btn margin-register" name="register-btn">
+                REGISTER
               </button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(
+        () => {
+          $('#register-form').on('submit', (event) => {
+            //event.preventDefault();
+            let username = $('input[name="username"]').val();
+            let email = $('input[name="email"]').val();
+            let password = $('input[name="password"]').val();
+            let registerdata = {username: username, email: email, password: password};
+            let spinner = '<img class="spinner" src="/images/graphics/spinner.gif">';
+            $('button[name="register-btn"]').append(spinner);
+            $('button[name="register-btn"]').attr('disabled','');
+            //console.log(username,email,password);
+            
+            $.ajax({
+              url: '/ajax/register.ajax.php',
+              method: 'post',
+              dataType: 'json',
+              data: registerdata
+            })
+            .done((response) => {
+              console.log(response);
+              //remove spinner
+              $('button[name="register-btn"] img').remove();
+              $('.alert').remove();
+              if (response.success == false){
+                //check for errors in different fields
+                if (response.errors.username){
+                  let template = $('#register-error').html().trim();
+                  let clone = $(template);
+                  $(clone).find('.alert-message').text(response.errors.username);
+                  $('input[name="username"]').parents('.form-group').append(clone);
+                }
+                if (response.errors.email){
+                  let template = $('#register-error').html().trim();
+                  let clone = $(template);
+                  $(clone).find('.alert-message').text(response.errors.email);
+                  $('input[name="email"]').parents('.form-group').append(clone);
+                }
+                if (response.errors.password){
+                  let template = $('#register-error').html().trim();
+                  let clone = $(template);
+                  $(clone).find('.alert-message').text(response.errors.password);
+                  $('input[name="password"]').parents('.form-group').append(clone);
+                }
+              }
+              $('button[name="register-btn"]').removeAttr('disabled');
+            });
+          });
+        }
+      );
+    </script>
   </body>
+  <?php include ('includes/footer.php'); ?>
 </html>
+<template id="register-error">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span class="alert-message"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+</template>
