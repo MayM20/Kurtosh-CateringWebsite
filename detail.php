@@ -10,6 +10,7 @@ if (isset($_GET["product_id"]) ){
     $product_price = $product[0]["Price"];
     $product_description = $product[0]["Description"];
 }
+$page_title = $product_name;
 ?>
 <!doctype html>
 <html>
@@ -18,6 +19,9 @@ if (isset($_GET["product_id"]) ){
     <?php include ('includes/navbar.php'); ?>
     <!--big main container-->
     <div class="container">
+    <?php
+      include('includes/breadcrumb.php');
+      ?>
         <div class="row">
         <div class="col-sm-6">
         <?php
@@ -44,9 +48,11 @@ if (isset($_GET["product_id"]) ){
 			<div class="quantity">
 			<input type="number" id="" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
 			<button class="add-to-cart-btn" type="submit" name="add-to-cart" value="199" class="single_add_to_cart_button button alt">ADD TO CART</button>
+			<button class="add-to-wish-btn" type="submit" name="add-to-wish" value="199" class="single_wish_button button alt">ADD TO WISHLIST</button>
+			</div>
 			</div>
 			</form>
-        </div>
+  
         
         <!--SIDE BAR RIGHT-->
         <div class="col-sm-2 sidebar">
@@ -61,6 +67,8 @@ if (isset($_GET["product_id"]) ){
             </div>
         </div>
         </div>
+        
+        
         <div class="row second-description">
             <div class="col-sm-10">
             <h2>Description</h2>

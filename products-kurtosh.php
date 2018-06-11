@@ -37,7 +37,7 @@ else{
   $current_category = 0;
 }
 
-$page_title = "Home page";
+$page_title = "Products page";
 ?>
 <!doctype html>
 <html>
@@ -51,6 +51,11 @@ $page_title = "Home page";
   </div>
 </div>
 <div class="container-fluid content">
+  
+   <?php 
+      //include breadcrumb;
+      include('includes/breadcrumb.php');
+      ?>
   
       <div class="row">
         <!-- Sidebar-->
