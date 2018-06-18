@@ -140,7 +140,6 @@ class ShoppingCart extends Database{
       return false;
     }
   }
-
   public function listCart(){
     if($this -> auth_state == true && $this -> cart_id){
       //this query joins several tables to get product information and image

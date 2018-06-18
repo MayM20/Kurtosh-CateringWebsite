@@ -1,6 +1,7 @@
 <?php
 
 include('autoloader.php');
+session_start();
 //create an instance of database class
 //$database = new Database();
 //$connection = $database -> connection;

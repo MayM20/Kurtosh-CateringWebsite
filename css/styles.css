@@ -219,6 +219,11 @@ section .section-title {
     float: left;
     height: 2.8em;
 }
+
+.quantity input{
+  width: 50px;
+}
+
 .add-to-cart-btn{
     background: #B28564 ;
     color: white;
@@ -460,4 +465,33 @@ section .section-title {
 .form-validation input.error,
 .form-validation textarea.error {
   border:1px solid #f03838 !important;
+}
+
+#map{
+  height: 400px;
+  width: 400px;
+  background-color: yellow;
+  
+   display: flex;
+    justify-content: center;
+    align-content: center;
+   margin-left:30px;
+    overflow: hidden;
+    border-radius:50%;
+
+}
+.form-contact{
+  padding-bottom: 20px;
+}
+.col-md-6.multi-horizontal.input{ 
+  padding-bottom: 20px;
+  
+}
+.col-md-12.multi-horizontal.input{ 
+  padding-bottom: 20px;
+  
+}
+.btn.btn-primary.btn-form{
+  background-color: #B28564;
+  border-color: #B28564;
 }

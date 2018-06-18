@@ -1,10 +1,10 @@
 <?php
 session_start();
 include('autoloader.php');
-
-if( $_SESSION )
-
-
+// if user is not logged in, redirect to home page
+if(!$_SESSION["account_id"]){
+  header("location:index.php");
+}
 $page_title = "Shopping Cart";
 ?>
 

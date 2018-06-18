@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
-  <?php include ('includes/head.php'); ?>
+<?php 
+  include ('includes/head.php');
+  include('autoloader.php');
+?>
   <body>
     <?php include('includes/navbar.php'); ?>
     <div class="jumbotron jumbotron-fluid">

@@ -4,30 +4,33 @@
     <div class="columns sixteen">
       <ul>
           <?php
+              $cart = new ShoppingCart();
+              $cart_count = $cart -> getCartCount();
+          ?>
+          <?php
             if(isset($_SESSION["username"]) && !empty($_SESSION["username"]))
             
             {
               echo '<li><a href="logout.php">Logout</a></li>';
               echo "<div class=\"myaccount\">" . "Welcome " . $_SESSION["username"] . "</div>";
+              echo '<li><a href="shoppingcart.php" class="nav-icon cart mx-1"><img src="images/graphics/icon-cart.png"><span id="cart-count" class="badge badge-primary">' . $cart_count . '</span>
+                    </a>
+                    </li>';
+              
               
             }
             else
             {
               echo '<li><a href="login.php" id="customer_login_link">Log in</a></li>';
               echo '<li><a href="register.php"><span class="icon-cart"></span>or Register</a></li>';
-              echo '<li><a href="shoppingcart.php" class="nav-icon"><img src="images/graphics/icon-cart.png"><span id="cart-count" class="badge badge-primary"><?php echo $cart_count; ?></span>
+              echo '<li><a href="shoppingcart.php" class="nav-icon cart mx-1"><img src="images/graphics/icon-cart.png"><span id="cart-count" class="badge badge-primary">' . $cart_count . '</span>
                     </a>
                     </li>';
             }
             ?>
-            <!--this part is not working
-            ?php
-    $cart = new ShoppingCart();
-    $cart_count = $cart -> getCartCount();
-    ?>-->
-            
-  
       </ul>
+      
+      
     </div>
 </div>
 </div>
@@ -57,7 +60,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">LOCATIONS</a>
+        <a class="nav-link" href="locations.php">LOCATIONS</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="contact-us.php">CONTACT US</a>
