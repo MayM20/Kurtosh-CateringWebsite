@@ -45,10 +45,16 @@ $(document).ready( () => {
       //get the product id
       let pId = $(target).parents('.shopping-list-form').find('input[name="productId"]').val();
       let deleteData = {productId : pId, action: 'delete' };
-      getCartData( cartData, (response) => {
-        //remove the item from list
-        //update the total
-        //updateCartTotal( getCartTotal());
+      getCartData( deleteData , (response) => {
+        if(response.success == true ){
+          //remove the item from list
+          $(target).parents('.row').remove();
+          //update the total
+          updateCartTotal( getCartTotal());
+          //update count in navbar by taking 1 off
+          let count = parseInt( $('#cart-count').text() ) - 1;
+          $('#cart-count').text(count);
+        }
       });
     }
     //PLUS AND MINUS BUTTONS
@@ -138,22 +144,28 @@ function getCartContents(){
         let productPrice = item.price;
         let quantity = item.quantity;
         let image = item.image;
-        let template = `<div class="row">
-          <div class="col-6 col-sm-6 col-md-4">
-            <img class="img-fluid" src="/images/products/${image}">
+        let template = `<br><br>
+        <div class="row">
+          <div class="col-2 col-sm-2 col-md-2">
+            <img class="img-fluid cart-image" src="/images/products/${image}">
           </div>
-          <div class="col-6 col-sm-6 col-md-3">
-            <h5>${productName}</h5>
-            <h4 class="product-price price">${productPrice}</h4>
-            <p>product id: ${productId} </p>
-          </div>
-          <div class="col-12 col-sm-12 col-md-5 mt-sm-2">
-          <form id="shopping-list-form-${itemId}" class="shopping-list-form form-inline">
-            <div class="form-row w-100">
-              <div class="col-4 col-sm-6 col-md-4 d-sm-none d-lg-block">
-                <label>Quantity</label>
+          <div class="col-4 col-sm-4 col-md-4">
+            <div class="row">
+              <div class="col-6">
+                <h5>${productName}</h5>
               </div>
-              <div class="col-4 col-sm-6 col-md-6">
+              <div class="col-6">
+                <p class="product-price-cart price">${productPrice}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6">
+          <form id="shopping-list-form-${itemId}" class="shopping-list-form form-inline">
+            <div class="form-row w-100 input-test">
+              <div class="col-4 d-sm-none d-lg-block">
+                <h5>Quantity</h5>
+              </div>
+              <div class="col-4">
                 <input type="hidden" name="productId" value="${productId}">
                 <input type="hidden" name="itemId" value="${itemId}">
                 <div class="input-group">
@@ -177,8 +189,8 @@ function getCartContents(){
                 </button>
                 -->
               </div>
-              <div class="col-3 col-sm-12 col-md-6 mt-2 mt-sm-0 mt-md-2">
-                <button type="button" class="btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
+              <div class="col-4">
+                <button type="button" class="btn btn-outline-success my-2 my-sm-0 btn btn-outline-info btn-block" data-product-id="${productId}" data-item-id="${itemId}" data-action="delete">
                   Delete
                 </button>
               </div>
@@ -202,9 +214,9 @@ function getCartContents(){
             <div class="input-group-append">
               <button class="btn btn-outline-success">Checkout</button>
             </div>
-          <div>
+          </div>
         </div>
-      </div><hr>`;
+      <hr></div><br><br>`;
       //add the total price to shopping list items 
       $('#shopping-list').append(totalTemplate);
       return true;

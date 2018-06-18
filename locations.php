@@ -36,8 +36,7 @@
             </div> 
         <div class="row">
             <!--map Radnwick-->
-            <div class=col></div>
-        <div class="col-6">
+        
             <div id="map">
             <script>
             function myMap(){
@@ -50,11 +49,8 @@
             </script>
             <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
             </div>
-        </div>
-        <div class="col"></div>
+
            
-            
-            
             
             </div>
             <div class="row">

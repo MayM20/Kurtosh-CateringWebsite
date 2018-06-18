@@ -14,7 +14,8 @@ $products_obj = new Products();
   <body>
     <?php include ('includes/navbar.php'); ?>
     <div>
-    	 <img class="home" src="images/graphics/banner.jpg" alt="Logo">
+    	 <img class="home" src="images/graphics/banner-w-logo.jpg" alt="Logo">
+    	 <h1 style="color: white;">SUPER DELICIOUS CRISPY CAKE</h1>
     </div>
     <div class="about-us-section">
     	<div class="container">
@@ -24,8 +25,13 @@ $products_obj = new Products();
     			</div>
     			<div class="col-md-6 col-xs-12">
     				<div class="text">
-    				<h2>Lorem ipsum</h2>
-    				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    					
+    				<h2>Kurtosh House</h2>
+    				<p>Kurtosh house is the culmination of yearning to recreate what home feels like: comfortable, cozy, relaxing, flawed, unquestionably accepting, eclectic & sweet. 
+
+            <br>The name Kurtosh comes from Kurtoskalacs, a traditional Hungarian pastry famously known as chimney cake. Boasting the perfect harmony of caramelised crispy flaky outer with soft inner walls, the cylindrical yeast pastry is often sold as street snacks from carts all over Hungary. 
+            <br>Today, this sweet nosh forms one of many distinctive charms of Kurtosh house. Passersby often stop in their tracks to watch with their eyes widening with growing curiosity, the chef with a giant rolling pin & a thin ribbon of dough. From the chefs expert nudge of the hand, the dough effortlessly coils around the rolling pin ready to be baked to sweet golden goodness.   </p>
+    			
     			</div>
     			</div>
     		</div>
@@ -33,45 +39,40 @@ $products_obj = new Products();
     </div>
     <div class="short-banner">
     	<div class="opacity">
-    	 <h2>Making your Winter cake in May is perfect.</h2>
+    	 <h2>Making your Winter cake in June is perfect.</h2>
     	 </div>
     </div>
     <!--Start popular items-->
     	<div class="delicious-food-section fix-top-margin">
 				<div class="container">
 					<div class="theme-section-title text-center">
-						<h2>Delicious Means Cukape</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed tincidunt ut laoreet <br> dolore magna aliquam erat volutpat lorem</p>
+						<h2>Featured Products</h2>
+						<p>Make yourself at home & feed your memory with appetite for all<br> things yummy as gluttonous curiosity is to be explored at Kurtosh house</p>
 					</div> <!-- /.theme-section-title -->
 					<div class="row">
-						<div class="col-md-3 col-xs-6">
-							<div class="single-item">
-								<img src="images/graphics/crustyBread.jpg" alt="">
-								<h5><a href="#">Simple Crusty Bread</a></h5>
-								<p>Lorem ipsum dolor amet, consetec <br>adipiscing elit. magna</p>
-							</div>
-						</div> <!-- /.col- -->
-						<div class="col-md-3 col-xs-6">
-							<div class="single-item">
-								<img src="images/graphics/croissant_2.jpg" alt="">
-								<h5><a href="#">Big Size Cream Cake</a></h5>
-								<p>Lorem ipsum dolor amet, consetec <br>adipiscing elit. magna</p>
-							</div>
-						</div> <!-- /.col- -->
-						<div class="col-md-3 col-xs-6">
-							<div class="single-item">
-								<img src="images/graphics/minicupcake.jpg" alt="">
-								<h5><a href="#">Delicious Cupcake</a></h5>
-								<p>Lorem ipsum dolor amet, consetec <br>adipiscing elit. magna</p>
-							</div>
-						</div> <!-- /.col- -->
-						<div class="col-md-3 col-xs-6">
-							<div class="single-item">
-								<img src="images/graphics/bothDonuts.jpg" alt="">
-								<h5><a href="#">Simple Crusty Bread</a></h5>
-								<p>Lorem ipsum dolor amet, consetec <br>adipiscing elit. magna</p>
-							</div>
-						</div> <!-- /.col- -->
+						<div class="row delicious-food-section">
+	    	    <div class="col col-xs-6">
+	    	    	<div class="single-item">
+	    	    		<img src="images/products/brownie_feature.png" alt="">
+	    	    		<h5><a href="detail.php?product_id=67">Delicious Brownie</a></h5>
+	    	    		<p>Big, Fudgy & decadent, studded with or without walnuts.<br>A customer favorite!</p>
+	    	    	</div>
+	    	    </div> <!-- /.col- -->
+	    	    <div class="col col-xs-6">
+	    	    	<div class="single-item">
+	    	    		<img src="images/products/truffle_feature.png" alt="">
+	    	    		<h5><a href="detail.php?product_id=71">Delicious Chocolate Truffle</a></h5>
+	    	    		<p>Chocolate truffle is a type of chocolate confectionery, traditionally made with  <br>a chocolate ganache centre coated in chocolate, cocoa powder and chopped toasted nuts inside.</p>
+	    	    	</div>
+	    	    </div> <!-- /.col- -->
+	    	    <div class="col col-xs-6">
+	    	    	<div class="single-item">
+	    	    		<img src="images/products/biscotti.png" alt="">
+	    	    		<h5><a href="detail.php?product_id=72">Delicious Biscoti</a></h5>
+	    	    		<p>Kurtosh's Toasted Almond Butter biscotti bite are the <br>same famous deluxe butter biscotti in bite-size form.</p>
+	    	    	</div>
+	    	    </div> <!-- /.col- -->
+            </div>
 					</div> <!-- /.row -->
 				</div> <!-- /.container -->
 				<div class="devider"></div>

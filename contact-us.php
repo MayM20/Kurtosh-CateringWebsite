@@ -9,7 +9,9 @@
 <div class="jumbotron jumbotron-fluid">
 <div class="container">
     <h1>Contact  Us</h1>      
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at arcu et mi sodales eleifend vel eu magna. Nulla ullamcorper odio eu pharetra aliquam. Nunc enim augue, mattis vitae pharetra sit amet, vulputate vel nunc. In lacinia elementum ex.</p>
+    <p>Basic activity of our bakery is producing and trading various kinds of bread, 
+    <br>cookies, bread crumbs and pies.
+    </p>
   </div>
 </div>
 <section class="mbr-section form4 cid-qv5Aq4h3k3" id="form4-2y">
@@ -18,33 +20,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <!--<div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>-->
-                <div id="map"></div>
-                   <script>
-                    function myMap(){
-                    var mapCanvas=document.getElementById("map");
-                    var mapOptions={
-                    center:new google.maps.LatLng(-33.8819625, 151.1602501), zoom: 11
-                    };
-                    var map= new google.maps.Map(mapCanvas, mapOptions); 
-                    }
-                    </script>
-        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-                
-            </div>
-            <div class="col-md-6">
-                <h2 style="font-size: 55px;">
+                <h2 style="font-size: 40px;">
                     Contact Us
                 </h2>
                 <div>
                     <div class="icon-block pb-3">
                         <h4>
-                            Don't hesitate to contact us
+                            Don't be a stranger & keep in contact. 
+                            <br>We would love to hear from you!
                         </h4>
                     </div>
                     <div class="icon-contacts pb-3">
                         <h5>
-                            Ready for offers and cooperation
+                            Visit our brand stores!
                         </h5>
                         <p>
                             Phone: +1 (0) 000 0000 001 <br>
@@ -52,6 +40,11 @@
                         </p>
                     </div>
                 </div>
+                
+                
+            </div>
+            <div class="col-md-6">
+                
                 <div class="form-contact">
         
                     <form class="form-contact" ><input type="hidden" data-form-email="true" value="">

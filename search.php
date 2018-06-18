@@ -14,6 +14,11 @@ $page_title = $search_words;
   <?php include ('includes/head.php'); ?>
   <body>
     <?php include('includes/navbar.php'); ?>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Search Results</h1>
+      </div>
+    </div>
     <div class="container content">
       <?php
       
@@ -59,5 +64,6 @@ $page_title = $search_words;
       
       ?>
     </div>
+    <?php include ('includes/footer.php'); ?>
   </body>
 </html>

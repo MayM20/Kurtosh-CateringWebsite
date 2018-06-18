@@ -47,7 +47,10 @@ $page_title = "Products page";
     <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1>Order Online</h1>      
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at arcu et mi sodales eleifend vel eu magna. Nulla ullamcorper odio eu pharetra aliquam. Nunc enim augue, mattis vitae pharetra sit amet, vulputate vel nunc. In lacinia elementum ex.</p>
+    <p>Australia's range of quality cakes, bakery and patisserie 
+    <br>items delivered to your Sydney home or office
+    <br>Order now!
+    </p>
   </div>
 </div>
 <div class="container-fluid content">

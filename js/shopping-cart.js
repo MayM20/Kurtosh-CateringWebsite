@@ -51,7 +51,7 @@ $(document).ready(
               //reenable the button
               
             }
-            /*else{
+            else{
               //unsuccessful
               //read response data
               //the script shoppingcart.ajax.php will send redirect in the response
@@ -66,7 +66,7 @@ $(document).ready(
               let url = `/${dest}?productId=${productId}&quantity=${quantity}&action=${action}`;
               //redirect user to destination page (url) if they are not logged in while adding item to shopping cart or wishlist.
               (dest) ? window.location.href = url : window.location.href='index.php';
-            }*/
+            }
           });
           
         }

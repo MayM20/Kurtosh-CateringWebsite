@@ -5,7 +5,7 @@
     width: 100%;
 }
 .top_bar {
-    background-color: #4f413f;
+    background-color: white;
     text-align: center;
 }
 .top_bar .container {
@@ -30,7 +30,7 @@
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: black;
     letter-spacing: 0px;
     display: block;
     height: 30px;
@@ -54,6 +54,12 @@ section .section-title {
   position: relative;
   max-width:100%;
   background-size: cover;
+ 
+ /*position: absolute;*/
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ 
 }
 .navbar{
   font-size: 14px;
@@ -62,12 +68,12 @@ section .section-title {
     color: white;
     background-color: black;
     background-image: none;
-    border-color: purple;
+    border-color: #B28564;
 }
 .btn-outline-success:hover{
     color: #fff;
-    background-color: purple;
-    border-color: purple;
+    background-color: #B28564;
+    border-color: #B28564;
 }
 
 /*this works for the about-us-section*/
@@ -133,7 +139,6 @@ section .section-title {
 .jumbotron{
   background: url(../images/graphics/hero_inner_08.jpg) no-repeat center;
   color: white;
-  height: 400px;
 }
 .jumbotron p{
   font-size: 20px;
@@ -186,6 +191,24 @@ section .section-title {
   line-height: 1;
   color: black;
 }
+
+.product-price-cart{
+  /*old styles
+  font-weight: 600;
+  margin:1em 0;
+  border: 1px solid #B28564;*/
+  display: inline-block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #B28564;
+  padding: 1rem .2rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1;
+  color: black;
+}
+
 .price::before{
   content:'$';
 }
@@ -364,7 +387,7 @@ section .section-title {
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: black;
     letter-spacing: 0px;
     display: inline-block;
     height: 30px;
@@ -469,15 +492,14 @@ section .section-title {
 
 #map{
   height: 400px;
-  width: 400px;
+  width: 1200px;
   background-color: yellow;
-  
-   display: flex;
-    justify-content: center;
-    align-content: center;
-   margin-left:30px;
-    overflow: hidden;
-    border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*margin-left:30px;*/
+  overflow: hidden;
+  /*border-radius:50%;*/
 
 }
 .form-contact{
@@ -494,4 +516,18 @@ section .section-title {
 .btn.btn-primary.btn-form{
   background-color: #B28564;
   border-color: #B28564;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.cart-image {
+  width: 100%;
+  
+}
+
+.user-underscore {
+  text-decoration: underline;
 }
