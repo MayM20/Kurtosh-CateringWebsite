@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto" style="font-family: 'Open Sans', sans-serif;"><!--ml-auto align items to the right, unlike mr-auto-->
+    <ul class="navbar-nav ml-auto"><!--ml-auto align items to the right, unlike mr-auto-->
       <li class="nav-item active">
         <a class="nav-link" href="index.php">HOME<span class="sr-only">(current)</span></a>
       </li>

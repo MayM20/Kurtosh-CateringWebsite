@@ -28,7 +28,7 @@
     				<h2>Kurtosh House</h2>
     				<p>Kurtosh house is the culmination of yearning to recreate what home feels like: comfortable, cozy, relaxing, flawed, unquestionably accepting, eclectic & sweet.
             <br>The name Kurtosh comes from Kurtoskalacs, a traditional Hungarian pastry famously known as chimney cake. Boasting the perfect harmony of caramelised crispy flaky outer with soft inner walls, the cylindrical yeast pastry is often sold as street snacks from carts all over Hungary. 
-            <br>Today, this sweet nosh forms one of many distinctive charms of Kürtősh house. Passersby often stop in their tracks to watch with their eyes widening with growing curiosity, the chef with a giant rolling pin & a thin ribbon of dough. From the chef’s expert nudge of the hand, the dough effortlessly coils around the rolling pin ready to be baked to sweet golden goodness.   </p>
+            <br>Today, this sweet nosh forms one of many distinctive charms of Kurtosh house. Passersby often stop in their tracks to watch with their eyes widening with growing curiosity, the chef with a giant rolling pin & a thin ribbon of dough. From the chef’s expert nudge of the hand, the dough effortlessly coils around the rolling pin ready to be baked to sweet golden goodness.   </p>
     			
     			</div>
     			</div>

@@ -34,10 +34,6 @@
                         <h5>
                             Visit our brand stores!
                         </h5>
-                        <p>
-                            Phone: +1 (0) 000 0000 001 <br>
-                            Email: youremail@mail.com
-                        </p>
                     </div>
                 </div>
                 

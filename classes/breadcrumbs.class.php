@@ -12,7 +12,7 @@ class Breadcrumbs{
     }
     
     //output Bootstrap breadcrumb structure
-    echo "<ol class=\"breadcrumb bg-light my-0 my-sm-1 py-1 py-sm-2\">";
+    echo "<ol class=\"breadcrumb bg-white my-0 my-sm-1 py-1 py-sm-2\">";
     
     $counter = 0;
     $length = count($breadcrumbs);

@@ -252,6 +252,7 @@ section .section-title {
     color: white;
     border: 1px solid #B28564;
     font-style: bold;
+    border-radius: 5px;
 }
 /*FOOTER*/
 .clearfix img{
@@ -493,7 +494,7 @@ section .section-title {
 #map{
   height: 400px;
   width: 1200px;
-  background-color: yellow;
+  background-color: gray;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -530,4 +531,8 @@ section .section-title {
 
 .user-underscore {
   text-decoration: underline;
+}
+
+.breadcrumb-item a{
+  color: #B28564;
 }
