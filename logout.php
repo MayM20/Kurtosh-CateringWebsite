@@ -11,8 +11,8 @@ $origin = $_SERVER['HTTP_REFERER'];
 unset($_SESSION["username"]);
 //unset($_SESSION["email"]);
 //unset($_SESSION["account_id"]);
-session_destroy();
-$_SESSION = [];
+//session_destroy();
+//$_SESSION = [];
 
 
 //redirect the user to $origin

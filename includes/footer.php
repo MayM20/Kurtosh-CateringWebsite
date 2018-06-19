@@ -12,11 +12,10 @@
 							<div class="col-md-2 col-sm-4 col-xs-12 footer-list-widget">
 								<h5>Quick Links</h5>
 								<ul>
-									<li><a href="about-us.html" class="tran3s">About us</a></li>
-									<li><a href="pricing-plan.html" class="tran3s">Membership</a></li>
-									<li><a href="#" class="tran3s">Item</a></li>
+									<li><a href="about-us.php" class="tran3s">About us</a></li>
+	
 									<li><a href="#" class="tran3s">Refund Policy</a></li>
-									<li><a href="contact-us.html" class="tran3s">Contact us</a></li>
+									<li><a href="contact-us.php" class="tran3s">Contact us</a></li>
 								</ul>
 							</div> <!-- /.footer-list-widget -->
 							<div class="col-md-3 col-sm-4 col-xs-12 insta-feed">

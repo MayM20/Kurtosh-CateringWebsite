@@ -37,7 +37,7 @@ else{
   $current_category = 0;
 }
 
-$page_title = "Home page";
+$page_title = "Products page";
 ?>
 <!doctype html>
 <html>
@@ -47,10 +47,18 @@ $page_title = "Home page";
     <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1>Order Online</h1>      
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at arcu et mi sodales eleifend vel eu magna. Nulla ullamcorper odio eu pharetra aliquam. Nunc enim augue, mattis vitae pharetra sit amet, vulputate vel nunc. In lacinia elementum ex.</p>
+    <p>Australia's range of quality cakes, bakery and patisserie 
+    <br>items delivered to your Sydney home or office
+    <br>Order now!
+    </p>
   </div>
 </div>
 <div class="container-fluid content">
+  
+   <?php 
+      //include breadcrumb;
+      include('includes/breadcrumb.php');
+      ?>
   
       <div class="row">
         <!-- Sidebar-->
@@ -141,13 +149,16 @@ $page_title = "Home page";
               $image = $product["image"];
               
               echo "<div class=\"col-sm-3 product-column\">";
+              echo "<div>";
               echo "<a href=\"detail.php?product_id=$id\">";
               echo "<img class=\"product-thumbnail img-fluid\" src=\"images/products/$image\">";
               echo "<h4 class=\"product-name\">$name</h4>";
-              echo "<h5 class=\"price product-price\">$price</h5>";
-              echo "<p class=\"product-description\">Add to cart</p>";
               echo "</a>";
               echo "</div>";
+              echo "<h5 class=\"price product-price\">$price</h5>";
+              echo "<button type=\"button\" class=\"product-description\">Add to cart</button>";
+              echo "</div>";
+
               if($col_counter == 4 || $product_counter == $total_in_page){
                 echo "</div>";
                 echo "<hr>";
@@ -161,8 +172,6 @@ $page_title = "Home page";
         </div>
       </div>
         
-      
-          
     </div>
 </body>
 </html>
